@@ -19,7 +19,7 @@ public class SelenideTest {
         open("https://github.com");
 
         $(".header-search-input").click();
-        $(".header-search-input").sendKeys("AlexKrysov/hw9_allure");
+        $(".header-search-input").setValue("AlexKrysov/hw9_allure");
         $(".header-search-input").submit();
 
         $(linkText("AlexKrysov/hw9_allure")).click();

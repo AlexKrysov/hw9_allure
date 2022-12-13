@@ -25,7 +25,7 @@ public class StepsTest {
         });
         step("Ищем репозиторий " + REPOSITORY, () -> {
             $(".header-search-input").click();
-            $(".header-search-input").sendKeys(REPOSITORY);
+            $(".header-search-input").setValue(REPOSITORY);
             $(".header-search-input").submit();
         });
         step("Кликаем по ссылке репозитория " + REPOSITORY, () -> {
